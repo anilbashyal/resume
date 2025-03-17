@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anil Bashyal - Digital Marketer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="animated-title">Anil Bashyal</h1>
+            <p class="animated-subtitle">Digital Marketer</p>
+        </header>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Born on April 28, 2001, I am a passionate digital marketer with expertise in SEO, content marketing, and social media strategy.</p>
+        </section>
+        <section class="services">
+            <h2>My Services</h2>
+            <ul>
+                <li>SEO Optimization</li>
+                <li>Social Media Management</li>
+                <li>Content Marketing</li>
+                <li>Paid Advertising</li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>Email: anilbashyal@example.com</p>
+            <p>Phone: +123 456 7890</p>
+        </section>
+    </div>
+    <script>
+        gsap.from(".animated-title", { opacity: 0, y: -50, duration: 1 });
+        gsap.from(".animated-subtitle", { opacity: 0, y: 50, duration: 1, delay: 0.5 });
+        gsap.from("section", { opacity: 0, y: 30, duration: 1, stagger: 0.3 });
+    </script>
+</body>
+</html>
